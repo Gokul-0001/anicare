@@ -1,4 +1,4 @@
-/* Contact Page */
+/* General Styles */
 .contact-page {
     background-color: #ffffff;
     color: #000;
@@ -19,7 +19,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    flex: 1; /* Ensure it takes up remaining space to push footer down */
+    flex: 1;
 }
 
 /* Left Section */
@@ -149,4 +149,105 @@ textarea {
     overflow: hidden;
     margin: 0 auto;
     padding-bottom: 40px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        padding: 15px;
+        gap: 30px;
+    }
+
+    .left-section,
+    .right-section {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .main-title {
+        font-size: 28px;
+    }
+
+    .subtext {
+        font-size: 16px;
+    }
+
+    .contact-details p {
+        font-size: 14px;
+    }
+
+    .right-section h3 {
+        font-size: 18px;
+    }
+
+    .right-section p {
+        font-size: 14px;
+    }
+
+    .form-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 14px;
+    }
+
+    .radio-options {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .submit-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .location-frame {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-page {
+        padding: 20px 10px;
+    }
+
+    .main-title {
+        font-size: 24px;
+    }
+
+    .subtext {
+        font-size: 14px;
+    }
+
+    .contact-details p {
+        font-size: 12px;
+    }
+
+    .right-section {
+        padding: 10px;
+    }
+
+    .right-section h3 {
+        font-size: 16px;
+    }
+
+    .right-section p {
+        font-size: 12px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .submit-btn {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
 }
