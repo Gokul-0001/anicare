@@ -1,0 +1,98 @@
+/* Footer Styling */
+.footer {
+    background-color: #3bc113; /* Footer background color */
+    color: white; /* Text color */
+    padding: 40px 20px;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+/* Footer Logo Section */
+.footer-logo {
+    flex: 1;
+    min-width: 20px;
+}
+
+.footer-logo .logo {
+    max-width: 186px;
+    margin-bottom: 10px;
+}
+
+.footer-logo p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Remove default link styles */
+.footer-link {
+    color: inherit; /* Inherits the parent text color */
+    text-decoration: none; /* Removes the underline */
+    font-weight: bold; /* Optional: Makes the links bold */
+  }
+  
+  .footer-link:hover {
+    color: #f04a33; /* Optional: Changes color on hover */
+    text-decoration: underline; /* Optional: Adds underline on hover */
+  }
+  
+
+/* Footer Columns */
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-column h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 2px solid #f04a33;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Contact Information */
+.footer-column p {
+    margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-logo,
+    .footer-column {
+        margin-bottom: 20px;
+    }
+}

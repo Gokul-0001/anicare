@@ -1,0 +1,351 @@
+/* Home container */
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    box-sizing: border-box;
+  }
+  
+  /* Custom Swiper container */
+  .custom-swiper-container {
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Slider Image */
+  .slider-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Buttons for next and previous */
+  .swiper-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    background-color: rgb(229, 229, 229);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    width: 50px; /* Set the width */
+    height: 50px; /* Set the height */
+    border-radius: 50%; /* Makes the background circular */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centers the icon inside the button */
+  }
+  
+  .prev-btn {
+    left: 10px;
+  }
+  .next-btn {
+    right: 10px;
+  }
+  
+  /* Dot Indicators */
+  .dot-indicators {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .dot {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(187, 187, 187, 0.7);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dot.active {
+    background-color: #3ade08;
+  }
+  
+  .dot:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
+
+  .section-title{
+    max-width: 1400px;
+    margin: 0 auto;
+    font-size: 1.4rem;
+    font-weight:500;
+    margin-top: 50px;
+  }
+  
+  .category-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    gap: 5px;
+  }
+  
+  .category-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit:fill;
+    margin-bottom: 10px;
+  }
+  
+  .category-name {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+
+
+  .banner-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+  
+  .banner-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .swiper {
+    width: 100%;
+    max-width: 1400px;
+    margin: 20px auto;
+  }
+  
+  .swiper-pagination {
+    bottom: 10px;
+  }
+  
+
+/* Responsive and adaptive layout */
+.product-cards-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* Six cards per row */
+  gap: 30px;
+  margin:20px 60px;
+  padding: 10px;
+}
+
+/* Card styling */
+.product-card {
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover effect for product card */
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+
+/* Image styling */
+.product-image {
+  width: 100%;
+  height: 170px; /* Fixed height for uniform size */
+  object-fit: contain; /* Ensures aspect ratio is maintained */
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Product name styling */
+.product-card h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 10px;
+  text-align: left;
+}
+
+
+/* Card footer for ratings and cart */
+.product-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.rating-stars .star-icon {
+  color: #ffcc00; /* Gold for stars */
+  font-size: .9rem;
+  margin-right: 2px;
+}
+
+.cart-icon {
+  color: #3ade08; /* Blue for cart icon */
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.cart-icon:hover {
+  color: #8ceb6f; /* Darker blue on hover */
+}
+
+.newsletter-section {
+  background: linear-gradient(to bottom right, #d5ffec, #edfff7);
+  padding: 30px;
+  border-radius: 30px;
+  max-width: 1400px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.newsletter-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 60px;
+  align-items: center;
+}
+
+.left-side {
+  flex: 1;
+}
+
+.newsletter-title {
+  width: 90%;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.newsletter-para {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.newsletter-input-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.newsletter-input {
+  width: 100%;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  padding-right: 100px; /* Space to fit the button inside */
+}
+
+.subscribe-button {
+  position: absolute;
+  top: 50%;
+  right: 1px; /* Position the button to the right inside the input */
+  transform: translateY(-50%);
+  padding: 15px 20px;
+  background-color: #28a745;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.subscribe-button:hover {
+  background-color: #218838;
+}
+
+.right-side {
+  flex: 0 0 auto;
+  margin-left: 20px;
+}
+
+.email-image {
+  width: 400px;
+  height: auto;
+}
+
+
+@media (max-width: 1024px) {
+  .product-cards-container {
+    grid-template-columns: repeat(3, 1fr); /* Three cards per row for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .product-cards-container {
+    grid-template-columns: repeat(2, 1fr); /* Two cards per row for small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .product-cards-container {
+    margin: 20px;
+    grid-template-columns: repeat(2, 1fr); /* One card per row for very small screens */
+  }
+  .swiper-slide{
+    padding:0 10px;
+  }
+
+  .category-image {
+    width: 100px;
+    height: 100px;
+  }
+  .category-item{
+    width: 100px;
+    margin-bottom: 20px;
+  }
+  .home-container{
+    height: 15vh;
+    margin-bottom: 50px;
+  }
+  .custom-swiper-container{
+    height: 180px;
+    margin-top: 50px;
+  }
+  .dot-indicators{
+    bottom: 10px;
+  }
+  .section-title{
+    margin: 20px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .newsletter-content {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 20px;
+  }
+  .email-image{
+    display: none;
+  }
+}

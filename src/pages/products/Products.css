@@ -1,0 +1,122 @@
+/* Products.css */
+.product-description {
+    display: flex;
+    padding: 20px;
+    max-width: 1300px;
+    margin: 0 auto;
+    gap: 20px;
+  }
+  
+  .product-description-left {
+    flex: 1;
+  }
+  
+  .product-description-right {
+    flex: 2;
+  }
+  
+  .product-description-left img {
+    width: 100%;
+    height: auto;
+    max-height: 500px; /* Limiting the max height */
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .product-description-right h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .product-description-right p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .product-description-right strong {
+    font-size: 18px;
+    color: #007BFF;
+  }
+  .related-products {
+    margin-top: 40px;
+  }
+  
+  .related-products h3 {
+    font-size: 22px;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  
+
+  
+  .product-cards {
+    display: grid;
+    max-width: 1400px;
+    margin: 0 auto;
+    grid-template-columns: repeat(6, 1fr); /* Four cards per row */
+    gap: 20px;
+  }
+  
+  .product-card {
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer; /* Makes the card clickable */
+  }
+  
+  .product-card:hover {
+    transform: scale(1.03); /* Slight zoom on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .product-card-image {
+    width: 100%;
+    height: 170px; /* Uniform image size for related products */
+    object-fit: contain;
+    border-radius: 8px;
+  }
+  
+  .product-cards h4 {
+    font-size: 18px;
+    text-align: left;
+    margin-top: 10px;
+  }
+  
+  .related-product-info {
+    display: flex;
+    justify-content: space-between; /* Aligns ratings and cart icon */
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .related-product-rating {
+    display: flex;
+    align-items: center;
+  }
+  
+  .related-product-rating .rating-value {
+    margin-left: 5px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .related-cart-icon {
+    color: #3ade08; /* Blue for cart icon */
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .related-cart-icon:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Optional: Remove unwanted padding for paragraph inside product cards */
+  .product-cards p {
+    color: gray;
+    padding: 5px 0;
+  }
+  
+  

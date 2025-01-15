@@ -1,0 +1,945 @@
+/* About.css */
+.about-page {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  overflow-x: hidden; /* Prevents content from going out on the right side */
+}
+
+/* Brand Story Section */
+.brand-story {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 10%;
+}
+
+.text-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.section-title {
+  color: #d81a2d;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.main-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.description {
+  text-align: justify;
+  font-size: 16px;
+  color: #363131;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.brand-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+  .brand-story {
+    flex-direction: column;
+    padding: 20px 5%; /* Reduced padding */
+    text-align: center;
+  }
+
+  .image-container {
+    order: 1; /* Ensures the image appears first */
+    margin-bottom: 20px; /* Adds spacing between the image and text */
+  }
+
+  .text-content {
+    order: 2; /* Ensures the text appears after the image */
+    max-width: 100%; /* Prevents the text content from overflowing */
+    margin: 0; /* Removes any default margins */
+  }
+
+  .main-title {
+    font-size: 28px; /* Adjusted font size for mobile */
+  }
+
+  .description {
+    font-size: 14px; /* Adjusted font size for better readability */
+    padding: 0 10px; /* Adds padding to prevent text from touching the screen edges */
+  }
+
+  .brand-image {
+    max-width: 90%; /* Slightly smaller image width */
+    height: auto;
+    border-radius: 12px;
+  }
+}
+
+/* Green Section */
+.blue-section {
+  background-color: #43cb19; /* Green background */
+  color: white; /* White text */
+  text-align: center;
+  padding: 50px 20px;
+  margin-top: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blue-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.blue-description {
+  font-size: 20px;
+  line-height: 1.6;
+  max-width: 950px;
+  margin: 0 auto 30px auto;
+  text-align: justify;
+}
+
+.blue-icons {
+  padding-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+.icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 150px;
+}
+
+.icon-image {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 10px;
+}
+
+.icon-text {
+  padding-top: 10px;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+  .blue-title {
+    font-size: 20px; /* Adjusted font size for mobile */
+  }
+
+  .blue-description {
+    font-size: 16px; /* Smaller font size for better readability */
+    text-align: justify;
+    line-height: 1.4; /* Adjust line height for better spacing */
+  }
+
+  .blue-icons {
+    gap: 20px; /* Reduced gap between icons */
+  }
+
+  .icon-item {
+    max-width: 120px; /* Slightly smaller max-width */
+  }
+
+  .icon-image {
+    width: 50px; /* Reduced icon size for mobile */
+    height: 50px;
+    margin-bottom: 8px;
+  }
+
+  .icon-text {
+    font-size: 12px; /* Smaller text for icon labels */
+  }
+
+  /* Display icons in 2x2 grid */
+  .blue-icons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two icons per row */
+    gap: 20px;
+  }
+}
+
+
+
+
+/* VisionMission.css */
+.vision-mission-container {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 20px;
+}
+
+.section-heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.vision-mission-section {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+
+.vision-mission-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.text-block h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.text-block p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.call-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.call-button:hover {
+  background-color: #0056b3;
+}
+
+.management-section {
+  text-align: center;
+}
+
+.management-team {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.team-member {
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  width: 200px;
+}
+
+.team-member .avatar {
+  width: 80px;
+  height: 80px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 auto 10px auto;
+}
+
+.team-member h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.team-member p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.subheading {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+
+/* vission mission sction style code  */
+
+.vision-mission-section {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+
+.vision-mission-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.vision-mission-image {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.vision-image {
+  width: 100%;
+  max-width: 550px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.vision-mission-text {
+  flex: 1;
+}
+
+.vision-section,
+.mission-section {
+  margin-bottom: 20px;
+}
+
+.vision-title,
+.mission-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.vision-description,
+.mission-description {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: justify;
+  padding-right: 15px;
+}
+
+.consultation-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: black;
+  background-color: #7ee71b;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.consultation-button:hover {
+  background-color: #a5e866;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  .vision-mission-content {
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center-align the content */
+  }
+
+  .vision-mission-image {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .vision-mission-text {
+    width: 100%;
+    padding: 0 20px; /* Add some padding to the text for better readability */
+  }
+
+  .vision-title,
+  .mission-title {
+    font-size: 18px;
+  }
+
+  .vision-description,
+  .mission-description {
+    font-size: 14px; /* Adjust font size for mobile */
+  }
+
+  .consultation-button {
+    padding: 12px 25px; /* Make the button more clickable on mobile */
+    font-size: 14px;
+  }
+}
+
+/* Media Query for Tablets */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .vision-mission-content {
+    flex-direction: column; /* Stack image and text vertically for tablets */
+    align-items: center;
+  }
+
+  .vision-mission-image {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .vision-mission-text {
+    width: 90%;
+    padding: 0 20px;
+  }
+
+  .vision-title,
+  .mission-title {
+    font-size: 19px;
+  }
+
+  .vision-description,
+  .mission-description {
+    font-size: 15px;
+  }
+
+  .consultation-button {
+    padding: 12px 25px;
+    font-size: 15px;
+  }
+}
+
+
+
+/* FAQ Section */
+/* FAQ Section */
+.faq-section {
+  display: flex;
+  gap: 20px;
+  padding: 50px 10%;
+  background: #ffffff;
+}
+
+.faq-left {
+  flex: 2;
+}
+
+.faq-right {
+  flex: 1;
+}
+
+.faq-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.faq-item {
+  background: #f8f8f8;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: 1px solid #ddd;
+}
+
+.faq-item.open {
+  background: #eaeaea;
+  color: #333;
+}
+
+.faq-question {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-toggle {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.faq-answer {
+  margin-top: 10px;
+  font-size: 14px;
+  display: none;
+}
+
+.faq-item.open .faq-answer {
+  display: block;
+}
+
+.faq-contact {
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.faq-contact-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.faq-contact-description {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.contact-button {
+  padding: 10px 20px;
+  background: #ff6f61;
+  color: #fff;
+  border: none;
+  border-radius: 1.5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-button:hover {
+  background: #e85b50;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  .faq-section {
+    flex-direction: column; /* Stack FAQ left and right sections */
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .faq-left {
+    flex: 1;
+    margin-bottom: 20px; /* Add margin between FAQ questions and contact card */
+  }
+
+  .faq-right {
+    flex: 1;
+    margin-top: 20px; /* Make the contact card appear below on mobile */
+  }
+
+  .faq-title {
+    font-size: 28px; /* Adjust font size for mobile */
+  }
+
+  .faq-question {
+    font-size: 14px; /* Smaller font size for questions */
+  }
+
+  .faq-answer {
+    font-size: 12px; /* Adjust font size for answers */
+  }
+
+  .contact-button {
+    font-size: 14px; /* Make the contact button more suitable for smaller screens */
+    padding: 12px 24px; /* Adjust padding */
+  }
+
+  .faq-contact-title {
+    font-size: 16px; /* Adjust title size */
+  }
+
+  .faq-contact-description {
+    font-size: 14px; /* Adjust description size */
+  }
+}
+
+/* Media Query for Tablets */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .faq-section {
+    flex-direction: column; /* Stack FAQ left and right sections */
+    padding: 30px; /* Adjust padding for tablets */
+  }
+
+  .faq-left {
+    flex: 1;
+    margin-bottom: 20px;
+  }
+
+  .faq-right {
+    flex: 1;
+    margin-top: 20px;
+  }
+
+  .faq-title {
+    font-size: 32px; /* Adjust font size for tablets */
+  }
+
+  .faq-question {
+    font-size: 15px;
+  }
+
+  .faq-answer {
+    font-size: 13px;
+  }
+
+  .contact-button {
+    font-size: 15px;
+    padding: 14px 28px;
+  }
+
+  .faq-contact-title {
+    font-size: 17px;
+  }
+
+  .faq-contact-description {
+    font-size: 15px;
+  }
+}
+
+/* testimonial feedback section  */
+/* testimonial feedback section */
+
+.feedback-section {
+  padding: 50px;
+  background-color: #fdf8f4;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.feedback-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.feedback-subtitle {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.feedback-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.feedback-cards {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.cards-wrapper {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.feedback-card {
+  flex: 0 0 33.33%; /* 3 cards in a row by default */
+  max-width: 33.33%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin-right: 15px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  word-wrap: break-word; /* Ensures text wraps properly */
+  overflow: hidden; /* Prevents overflow outside the card */
+}
+
+.feedback-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.feedback-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.feedback-text {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+  line-height: 1.5; /* Added line-height to improve readability */
+  word-wrap: break-word; /* Ensures text wraps within the container */
+  white-space: normal; /* Allows the text to wrap naturally */
+}
+
+.feedback-rating {
+  font-size: 14px;
+  color: #ffb400;
+}
+
+.nav-button {
+  border: none;
+  background-color: #fff;
+  color: #555;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin: 0 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: #f0f0f0;
+}
+
+.nav-button:disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Mobile & Tablet responsiveness */
+@media (max-width: 768px) {
+  .feedback-section {
+    padding: 20px 10px; /* Adjust padding for smaller screens */
+  }
+
+  .feedback-title {
+    font-size: 24px; /* Adjust title size */
+  }
+
+  .feedback-subtitle {
+    font-size: 14px; /* Adjust subtitle size */
+  }
+
+  .feedback-container {
+    flex-direction: column; /* Stack buttons and cards vertically */
+    align-items: center;
+  }
+
+  .feedback-cards {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    justify-content: center; /* Center the feedback cards */
+  }
+
+  .cards-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+
+  .feedback-card {
+    flex: 0 0 100%; /* Each card takes 100% of the container width */
+    max-width: 100%; /* Ensure it fits mobile screens */
+    margin-bottom: 20px; /* Space between cards */
+    padding: 16px;
+    box-sizing: border-box;
+  }
+
+  .feedback-image {
+    width: 50px; /* Adjust image size for mobile */
+    height: 50px; /* Adjust image size */
+    margin-bottom: 12px;
+  }
+
+  .feedback-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #222;
+  }
+
+  .feedback-text {
+    font-size: 13px; /* Adjust text size for mobile */
+    margin-bottom: 10px;
+  }
+
+  .feedback-rating {
+    font-size: 14px;
+  }
+
+  .nav-button {
+    font-size: 18px; /* Adjust button font size */
+    padding: 12px 20px; /* Larger padding for easier interaction */
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .feedback-card {
+    flex: 0 0 48%; /* Two cards per row on tablet */
+    max-width: 48%;
+    margin-right: 20px;
+  }
+
+  .feedback-container {
+    flex-direction: row; /* Maintain horizontal layout for tablets */
+    justify-content: space-between;
+  }
+}
+
+
+/* Company Status and Future Aims Section */
+.company-status-section {
+  padding: 40px 15px;
+  background-color: #f9f9f9;
+}
+
+.company-status-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+
+
+.status-and-aims {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.present-status,
+.future-aims {
+  width: 48%;
+}
+
+.present-status {
+  padding-right: 20px;
+}
+
+.future-aims {
+  padding-left: 20px;
+  border-left: 2px solid #ccc; /* Vertical line between the two sections */
+}
+
+.status-title,
+.plans-title,
+.board-title {
+  font-size: 24px;
+  color: #333;
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+
+.status-description,
+.plans-description,
+.director p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.company-list,
+.plans-list {
+  list-style-type: disc;
+  margin-left: 30px;
+}
+
+.company-list li,
+.plans-list li {
+  margin-bottom: 8px;
+}
+
+.board-of-directors {
+  margin-top: 40px;
+}
+
+.directors {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.director-left,
+.director-middle,
+.director-right {
+  width: 30%;
+}
+
+.director-left h4,
+.director-middle h4,
+.director-right h4 {
+  font-size: 20px;
+  color: #333;
+}
+
+.director-left p,
+.director-middle p,
+.director-right p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .company-status-content {
+    padding: 15px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .status-title,
+  .plans-title,
+  .board-title {
+    font-size: 20px;
+  }
+
+  .status-description,
+  .plans-description,
+  .director p {
+    font-size: 12px;
+  }
+
+  .status-and-aims {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .present-status,
+  .future-aims {
+    width: 100%;
+    border-left: none; /* Remove vertical line on smaller screens */
+  }
+
+  .directors {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .director-left,
+  .director-middle,
+  .director-right {
+    width: 100%;
+  }
+
+  .director-left h4,
+  .director-middle h4,
+  .director-right h4 {
+    font-size: 18px;
+  }
+
+  .director-left p,
+  .director-middle p,
+  .director-right p {
+    font-size: 12px;
+  }
+}

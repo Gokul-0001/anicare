@@ -1,0 +1,229 @@
+.product-details-livestock-container h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  max-width: 1300px;
+  margin: 20px auto;
+}
+
+.product-details-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 20px;
+  gap: 20px; /* Add space between the grid items */
+  justify-items: start; /* Align items to the start by default */
+}
+
+/* Styling for individual product cards */
+.product-details-card {
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  width: 200px; /* Fixed width */
+  height: 250px; /* Fixed height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 5px;
+}
+
+.product-details-card:hover {
+  transform: scale(1.03); /* Slight zoom on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Styling for the product image inside the card */
+.product-details-card img {
+  width: 100%;
+  height: 150px; /* Fixed height for the image */
+  object-fit: contain; /* Ensures the image maintains aspect ratio and fills the container */
+  border-radius: 8px;
+}
+
+.product-details-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.product-details-price {
+  font-size: 16px;
+  color: green;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+  .product-details-grid {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center; /* Center-align the items */
+    align-items: center; /* Ensure vertical centering */
+  }
+}
+
+@media (max-width: 480px) {
+  .product-details-livestock-container h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+  }
+  .product-details-grid {
+    grid-template-columns: 1fr;
+    justify-items: center; /* Center-align the items */
+    align-items: center; /* Ensure vertical centering */
+  }
+}
+
+
+/* productdescription */
+/* Styling for the entire product description page */
+.product-details-description-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 1300px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+/* Styling for the product details container */
+.product-details-details {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-bottom: 40px;
+}
+
+/* Left side: Product image styling */
+.product-details-image img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Right side: Product information (name, description, price) */
+.product-details-info {
+  width: 50%;
+  padding-left: 20px;
+}
+
+.product-details-info h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.product-details-info p {
+  font-size: 16px;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+.product-details-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: green;
+  margin-top: 20px;
+}
+
+.product-details-add-to-cart {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.product-details-add-to-cart:hover {
+  background-color: #ff4500;
+}
+
+/* Styling for the related products section */
+.product-details-related-products {
+  width: 80%;
+  margin-top: 40px;
+}
+
+.product-details-related-products h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Grid layout for related products */
+.product-details-related-products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* Styling for individual related product cards */
+.product-details-related-product-card {
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-details-related-product-card:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-details-related-product-image {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product-details-related-product-name {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Mobile responsive design */
+@media screen and (max-width: 768px) {
+  .product-details-details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-details-info {
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .product-details-related-products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .product-details-info {
+    text-align: center;
+  }
+
+  .product-details-details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-details-related-products-grid {
+    grid-template-columns: 1fr;
+  }
+}
