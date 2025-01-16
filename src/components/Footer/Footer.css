@@ -1,0 +1,138 @@
+/* Footer Styling */
+.footer {
+    background: linear-gradient(to bottom right,#b3ffc3, #d5ffec );
+    color: rgb(0, 0, 0); /* Text color */
+    padding: 40px 20px;
+    font-size: 16px;
+    margin-top: 40px;
+    line-height: 1.6;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+/* Footer Logo Section */
+.footer-logo {
+    flex: 1;
+    min-width: 20px;
+}
+
+.footer-logo .logo {
+    max-width: 186px;
+    margin-bottom: 10px;
+}
+
+.footer-logo p {
+    margin: 0;
+    font-size:1rem;
+    font-weight: 500;
+}
+
+.footer-link {
+    color: inherit; 
+    text-decoration: none; 
+  }
+  
+  .footer-link:hover {
+    color: #f04a33;
+  }
+  
+
+/* Footer Columns */
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-column h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 2px solid #f04a33;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.footer-column ul li:hover {
+    cursor: pointer;
+}
+
+/* Contact Information */
+.footer-column p {
+    margin: 5px 0;
+}
+
+.footer-bottom-container{
+    border-top: 1px solid #444;
+}
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 10px;
+    font-size: 12px;
+  }
+  
+  .footer-bottom-left {
+    color: #000000;
+    font-size: 1rem;
+  }
+  .footer-bottom-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+  }
+  
+  .footer-bottom-right .social-link {
+    color: #ff6f00;
+    font-size:1.4rem;
+    text-decoration: none;
+  }
+  
+  .footer-bottom-right .social-link:hover {
+    color: #ff0000;
+  }
+  
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: left;
+        text-align: left;
+    }
+
+    .footer-logo,
+    .footer-column {
+        margin-bottom: 20px;
+    }
+    .footer-bottom{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-bottom-left{
+        margin: 10px;
+    }
+}

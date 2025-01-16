@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "../../components/Navbar/Footer/Footer";
 import "./Contact.css";
 const Contact = () => {
   return (
@@ -101,7 +100,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <Footer />
+
     </>
   );
 };

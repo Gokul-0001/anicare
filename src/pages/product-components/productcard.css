@@ -23,8 +23,8 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
-  width: 200px; /* Fixed width */
-  height: 250px; /* Fixed height */
+  width: 240px; /* Fixed width */
+  height: 280px; /* Fixed height */
   display: flex;
   flex-direction: column;
   justify-content: space-between;

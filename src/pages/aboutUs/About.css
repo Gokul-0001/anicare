@@ -1,6 +1,5 @@
 /* About.css */
 .about-page {
-  font-family: Arial, sans-serif;
   color: #333;
   line-height: 1.6;
   overflow-x: hidden; /* Prevents content from going out on the right side */
@@ -19,7 +18,7 @@
   max-width: 600px;
 }
 
-.section-title {
+.about-section-title {
   color: #d81a2d;
   font-weight: bold;
   font-size: 14px;
@@ -183,7 +182,6 @@
 
 /* VisionMission.css */
 .vision-mission-container {
-  font-family: Arial, sans-serif;
   margin: 20px;
   padding: 20px;
 }
@@ -194,18 +192,6 @@
   margin-bottom: 20px;
 }
 
-.vision-mission-section {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 8px;
-  margin-bottom: 40px;
-}
-
-.vision-mission-content {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
 
 .text-block h3 {
   font-size: 20px;
@@ -278,7 +264,6 @@
 /* vission mission sction style code  */
 
 .vision-mission-section {
-  background-color: #f9f9f9;
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 40px;
@@ -287,14 +272,17 @@
 .vision-mission-content {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
   justify-content: space-between;
   max-width: 1200px;
+  margin: 0 auto;
   width: 100%;
 }
 
 .vision-mission-image {
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-right: 20px;
 }
 

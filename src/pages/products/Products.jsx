@@ -40,7 +40,7 @@ const ProductDescription = () => {
       </div>
 
       <div className="related-products">
-        <h3>Related Products</h3>
+        <h3 cla>Related Products</h3>
         <div className="product-cards">
           {relatedProducts.map((relatedProduct) => (
             <div

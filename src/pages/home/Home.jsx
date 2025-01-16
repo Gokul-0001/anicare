@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import Footer from "../../components/Navbar/Footer/Footer";
 import Cat1 from '../../assets/images/Cat1.png';
 import Cat2 from '../../assets/images/Cat2.png';
 import Cat3 from '../../assets/images/Cat3.png';
@@ -118,7 +117,7 @@ const Home = () => {
   ];
 
   const categories = [
-    { id: 1, name: "Livestock Feed", image: Cat1 },
+    { id: 1, name: "Livestock ", image: Cat1 },
     { id: 2, name: "Pet Feed", image: Cat2 },
     { id: 3, name: "Aqua Feed", image: Cat3 },
     { id: 4, name: "Production Facilities", image: Cat5 },
@@ -182,9 +181,7 @@ const Home = () => {
   </div>
 </div>
 
-      
- {/* Add the Footer Component */}
- <Footer />
+
 
     </div>
   );

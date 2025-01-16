@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./About.css";
 import AllPetImage from "../../assets/images/All-pet.jpg"; // Import the image
 import AboutImage from "../../assets/images/About-img.webp";
-import Footer from "../../components/Navbar/Footer/Footer";
 import FaqImage from "../../assets/images/faq.webp";
 import iconImg1 from "../../assets/images/icons(1).png";
 import iconImg2 from "../../assets/images/icons(2).png";
@@ -84,7 +83,7 @@ const About = () => {
       {/* Brand Story Section */}
       <div className="brand-story">
         <div className="text-content">
-          <h4 className="section-title">BRAND STORY</h4>
+          <h4 className="about-section-title">BRAND STORY</h4>
           <h1 className="main-title">
  Excellence in Animal Healthcare
 </h1>
@@ -193,7 +192,7 @@ const About = () => {
     {/* Company Status and Future Aims Section */}
 <div className="company-status-section">
   <div className="company-status-content">
-    <h2 className="section-title">Present Status & Future Aims</h2>
+    <h2 className="about-section-title">Present Status & Future Aims</h2>
     <div className="status-and-aims">
       <div className="present-status">
         <h3 className="status-title">Present Status of ANICARE</h3>
@@ -287,23 +286,7 @@ const About = () => {
       ))}
     </div>
   </div>
-  <div className="faq-right">
-    <div className="faq-contact">
-      <img
-        src={FaqImage} // Replace with the correct image URL
-        alt="Question Icon"
-        className="faq-image"
-        style={{ width: "170px", height: "160px" , borderRadius: "10px"  }}
-      />
-
-      <h3 className="faq-contact-title">Do you have more questions?</h3>
-      <p className="faq-contact-description">
-        We’re here to help! Reach out to us for any additional queries regarding
-        our products, services, or customization options.
-      </p>
-      <button className="contact-button">📧 Contact Anicare</button>
-    </div>
-  </div>
+  
 </div>
 
 
@@ -350,8 +333,6 @@ const About = () => {
         </div>
       </div>  
 
- {/* Add the Footer Component */}
- <Footer />
 
     </div>
   );

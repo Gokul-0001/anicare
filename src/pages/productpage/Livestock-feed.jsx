@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Footer from "../../components/Navbar/Footer/Footer";
 import ProductCard from "../product-components/Productcard";
 import product1 from '../../assets/images/product1.jpg';
 import product2 from '../../assets/images/product2.jpg';
@@ -831,9 +830,7 @@ const Livestock = () => {
         ))}
       </div>
 
-     
- {/* Add the Footer Component */}
- <Footer />
+
 
     </div>
   );

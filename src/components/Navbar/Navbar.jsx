@@ -174,7 +174,7 @@ const Navbar = () => {
               <Link to="/about" onClick={handleLinkClick}>About</Link>
             </li>
             <li className="dropdown">
-              <a href="#">Products <i className="fas fa-chevron-down dropdown-icon"></i></a>
+              <a>Products <i className="fas fa-chevron-down dropdown-icon"></i></a>
               <ul className="dropdown-menu">
                 <li><Link to="/Livestock" onClick={handleLinkClick}>Livestock feed</Link></li>
                 <li><Link to="/Pet-feed" onClick={handleLinkClick}>Pet Feed</Link></li>

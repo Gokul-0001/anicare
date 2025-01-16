@@ -11,6 +11,7 @@ import ProductDescription from './pages/products/Products';
 import ProductPage from './pages/productpage/Productdescription';
 import About from './pages/aboutUs/About';
 import Contact from './pages/contact/Contact';
+import Footer from './components/Footer/Footer'
 const App = () => {
   return (
     <Router>
@@ -31,6 +32,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
+      <Footer/>
     </Router>
   );
 };
